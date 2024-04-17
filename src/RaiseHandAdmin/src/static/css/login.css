@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.con{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 100px;
+ 
+}
