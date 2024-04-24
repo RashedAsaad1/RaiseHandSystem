@@ -9,14 +9,42 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 def id_generator(size=10, chars=string.ascii_uppercase + string.digits):
+   """Generates a random string of uppercase letters and digits.
+
+    Args:
+        size (int, optional): The length of the string. Defaults to 10.
+        chars (str, optional): The characters to choose from. Defaults to uppercase letters and digits.
+
+    Returns:
+        str: The generated string.
+    """
    return ''.join(random.choice(chars) for _ in range(size))
 
 def index(request):
+   """Renders the index page.
+
+    Args:
+        request (HttpRequest): The request object.
+
+    Returns:
+        HttpResponse: The rendered index page.
+    """
    return render(request, 'index.html',{})
 
 
 
 def login_view(request):
+    """Handles the login view.
+
+    If the request method is POST, it tries to authenticate the user. If the user is authenticated, it logs them in and redirects them to the 'join' page.
+    If the request method is not POST or the user is not authenticated, it renders the login page.
+
+    Args:
+        request (HttpRequest): The request object.
+
+    Returns:
+        HttpResponse: The rendered page or a redirect response.
+    """
     if request.method == "POST":
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -34,6 +62,17 @@ def login_view(request):
 
 
 def register(request):
+    """Handles the registration view.
+
+    If the request method is POST, it tries to create a new user. If the form is valid, it saves the user and redirects them to the 'login_view' page.
+    If the request method is not POST or the form is not valid, it renders the registration page.
+
+    Args:
+        request (HttpRequest): The request object.
+
+    Returns:
+        HttpResponse: The rendered page or a redirect response.
+    """
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
@@ -48,9 +87,29 @@ def register(request):
   
 
 def join(request):
+   """Renders the join page.
+
+    Args:
+        request (HttpRequest): The request object.
+
+    Returns:
+        HttpResponse: The rendered join page.
+    """
    return render(request, 'join.html',{'test': get_user(request)})
 
 def createroom(request):
+    """Handles the room creation view.
+
+    If the request method is POST and the user is authenticated, it creates a new room and redirects the user to the chat page of the new room.
+    If the request method is not POST or the user is not authenticated, it renders the room creation page.
+
+    Args:
+        request (HttpRequest): The request object.
+
+    Returns:
+        HttpResponse: The rendered page or a redirect response.
+    """
+
     if request.method == "POST":
        if(get_user(request).is_anonymous):
          return redirect('login')
@@ -69,9 +128,20 @@ def createroom(request):
 
 
 def room(request,room_name):
-   if(get_user(request).is_anonymous):
+    """Renders the chat room page.
+
+    If the user is authenticated, it renders the chat room page. If the user is not authenticated, it redirects them to the login page.
+
+    Args:
+        request (HttpRequest): The request object.
+        room_name (str): The name of the room.
+
+    Returns:
+        HttpResponse: The rendered page or a redirect response.
+        """
+    if(get_user(request).is_anonymous):
          return redirect('login')
-   else:
+    else:
       context = {
              'id': get_user(request).id,
              'username': get_user(request).username,

@@ -8,13 +8,12 @@ from .views import (
     createroom,
     room,
 )
+
 urlpatterns = [
-path('', index, name='index'),
-path('login/', login_view, name='login_view'),
-path('register/', register),
-path('join/', join, name="join"),
-path('createroom/', createroom, name="createroom"),
-path('chat/<str:room_name>/',room, name="room"),
-
-
+    path('', index, name='index'),
+    path('login/', login_view, name='login_view'),
+    path('register/', register),
+    path('join/', join, name="join"),
+    path('createroom/', createroom, name="createroom"),
+    path('chat/<str:room_name>/',room, name="room"),
 ]
