@@ -10,9 +10,10 @@ To install and run the RaiseHandAdmin system, follow these steps:
 
 1. Clone the repository to your local machine using `git clone https://github.com/RashedAsaad1/RaiseHandSystem.git`.
 2. Navigate to the project directory with `cd RaiseHandAdmin`.
-3. Install the required dependencies with `pip install -r requirements.txt`.
-4. Set up your database by running `python manage.py makemigrations` and `python manage.py migrate`.
-5. Start the server with `python manage.py runserver`.
+3. Join the VENV by joing this directory `cd /RaiseHandSystem/src/RaiseHandUpSystem` and then type `source bin/activate`
+4. Install the required dependencies with `pip install -r requirements.txt`.
+5. Set up your database by running `python manage.py makemigrations` and `python manage.py migrate`.
+6. Start the server with `python manage.py runserver`.
 
 Now, you should be able to access the application on your local machine at `http://localhost:8000`.
 
