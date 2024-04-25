@@ -92,7 +92,7 @@ Ensure to implement proper authentication and authorization mechanisms to preven
 ## 11. Troubleshooting
 Common issues and their solutions:
 - **Issue**: WebSocket connection errors.
-  - **Solution**: Check WebSocket URL configuration if it is `http` or ``https` and channel layer settings.
+  - **Solution**: Check WebSocket URL configuration if it is `http` or `https` and channel layer settings.
 - **Issue**: Channel_redis connection errors.
   - **Solution**: Verify Redis server configuration and connection settings.
 
