@@ -91,15 +91,13 @@ The Raise Hand System can be used in both virtual and physical classroom setting
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 [Back to top](#table-of-contents)
 
 ## Contact
 
-Rashed Asaad - [@Fargosoc](https://twitter.com/Fargosoc) - [rashed@fargo.s
-
-olutions](rashed@fargo.solutions)
+Rashed Asaad - [@Fargosoc](https://twitter.com/Fargosoc) - [rashed@fargo.solutions](rashed@fargo.solutions)
 
 Project Link: [https://github.com/RashedAsaad1/RaiseHandSystem](https://github.com/RashedAsaad1/RaiseHandSystem)
 
