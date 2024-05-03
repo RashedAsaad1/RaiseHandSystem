@@ -38,7 +38,7 @@ This system was developed to enhance the educational experience by improving stu
 - ![Channels](https://img.shields.io/badge/django_channels-9cf.svg?style=flat-square&logo=django) - [Django Channels](https://channels.readthedocs.io)
 - ![Daphne](https://img.shields.io/badge/daphne-9cf.svg?style=flat-square&logo=django) - [Daphne](https://github.com/django/daphne)
 - ![Channels Redis](https://img.shields.io/badge/channels_redis-9cf.svg?style=flat-square&logo=redis) - [Channels Redis](https://github.com/django/channels_redis)
-- ![Redis](https://img.shields.io/badge/channels_redis-9cf.svg?style=flat-square&logo=redis) - [Redis](https://github.com/django/channels_redis)
+- ![Redis](S) - [Redis]()
 
 [Back to top](#table-of-contents)
 
