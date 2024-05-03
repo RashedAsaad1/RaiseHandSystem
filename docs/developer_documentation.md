@@ -28,7 +28,7 @@ This document provides a detailed guide for developers working on the Raise Hand
 ## 2. Technical Specifications
 - **Frameworks**:
   - Django 3.x
-  - Django Channels 3.x
+  - Django Channels 4.x
 - **Dependencies**:
   - Channel_redis
 - **Database**:
@@ -74,6 +74,7 @@ Follow these steps to set up the Raise Hand System locally:
    ```
    python manage.py runserver
    ```
+8. Launch the Redis server
 
 ---
 
