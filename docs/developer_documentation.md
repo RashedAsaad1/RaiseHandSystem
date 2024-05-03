@@ -30,6 +30,7 @@ This document provides a detailed guide for developers working on the Raise Hand
   - Django 3.x
   - Django Channels 4.x
 - **Dependencies**:
+  - Redis
   - Channel_redis
 - **Database**:
   - SQLite
