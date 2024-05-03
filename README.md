@@ -82,10 +82,9 @@ Now, you should be able to access the application locally at `http://localhost:8
 The Raise Hand System can be used in both virtual and physical classroom settings as follows:
 
 1. **Create an Account:** Administrators and teachers set up their accounts to manage classes.
-2. **Setup Classrooms or Meetings:** Schedule and configure settings for each class or meeting.
-3. **Student Participation:** Students log in to raise their hands during the class when they need help.
-4. **Manage Hand Raises:** Instructors can see the order of raised hands and address the students’ queries accordingly.
-5. **Direct Communication:** The system facilitates direct communication between students and instructors if needed.
+2. **Student Participation:** Students log in to raise their hands during the class when they need help.
+3. **Manage Hand Raises:** Instructors can see the order of raised hands and address the students’ queries accordingly.
+4. **Direct Communication:** The system facilitates direct communication between students and instructors if needed.
 
 [Back to top](#table-of-contents)
 
