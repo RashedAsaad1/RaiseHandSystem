@@ -43,8 +43,8 @@ The system consists of:
 - **Channel_redis**: Serves as the messaging backend, facilitating communication across instances.
 
 ### 3.2 Workflow Diagram
-(Insert diagram showing the flow of data and interactions within the system)
 
+![system architecture diagram](../assets/images/system_architecture_raise_hand_system.png)
 ---
 
 ## 4. Installation and Setup
